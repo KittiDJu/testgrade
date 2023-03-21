@@ -5,12 +5,12 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
-    return {"Hello": "World2"}
+    return {"Hello": "World"}
 
 @app.get("/grade/{score}")
 def get_grade(score: int):
     if score >= 80:
-        grade = "A"
+        grade = "AZ"
     elif score >= 70:
         grade = "B"
     elif score >= 60:
