@@ -10,7 +10,7 @@ def read_root():
 @app.get("/grade/{score}")
 def get_grade(score: int):
     if score >= 80:
-        grade = "AZ"
+        grade = "A"
     elif score >= 70:
         grade = "B"
     elif score >= 60:
