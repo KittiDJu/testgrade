@@ -52,7 +52,7 @@ jobs:
           command: aws s3 cp function.zip s3://dewkjtest/function.zip
       - run:
           name: Deploy new Lambda
-          command: aws lambda update-function-code --function-name testgrade --s3-bucket dewkjtest --s3-key function.zip
+          command: aws lambda update-function-code --function-name gradetest --s3-bucket dewkjtest --s3-key function.zip
 
 workflows:
   build-test-and-deploy:
